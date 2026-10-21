@@ -1,0 +1,12 @@
+// New Terminal ----->
+cd ~/Downloads/NASA-SPACE-APPS-Challenge-2026-main
+source .venv/bin/activate
+python -m pip install -r backend/requirements-dev.txt
+python -m uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8000
+
+// New Terminal ----->
+cd ~/Downloads/NASA-SPACE-APPS-Challenge-2026-main/frontend
+npm -v
+npm install
+npm run dev
+Local: http://localhost:5173/
